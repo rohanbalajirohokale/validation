@@ -1,0 +1,26 @@
+<label>please enter the batch name</label>
+<input type="text" (input)="fun($event)">
+<p></p>
+<button (click)="gun()">Submit</button>
+<p *ngIf="flag; else noname">{{str}}</p>
+<ng-template #noname>
+    <p>
+        select your batch
+    </p>
+    <p>
+        our batches:
+    </p>
+    <p>
+        pre-Placement activity
+    </p>
+    <p>
+        Logic Bulding
+    </p>
+    <p>
+        web Angular
+    </p>
+    <p>
+
+        Multi Os Programming
+    </p>
+</ng-template>
